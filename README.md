@@ -29,8 +29,23 @@
 ## Installation
 
 ```bash
+#Instalando pacotes
 $ npm install
+
+#Docker compose
+$ docker-compose up &
+
+#Rodando migrations
+$ npx prisma migrate dev
 ```
+
+## Environment
+
+```
+# .env file
+DATABASE_URL="postgresql://prisma-example:prisma-example@localhost:5432/example?schema=public"
+```
+
 
 ## Running the app
 
@@ -41,21 +56,6 @@ $ npm run start
 # watch mode
 $ npm run start:dev
 
-# production mode
-$ npm run start:prod
-```
-
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
 ```
 
 ## Support

@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  db:
+    container_name: prisma_nestjs_example
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: prisma-example
+      POSTGRES_PASSWORD: prisma-example
+      POSTGRES_DB: example
+    ports:
+      - "5432:5432"
